@@ -1,14 +1,11 @@
-import { useState } from "react";
-import { useDispatch } from "react-redux";
-import { IconButton, Box, useTheme, Typography, Button } from "@mui/material";
-import AddIcon from "@mui/material/Add";
-import RemoveIcon from "@mui/icons-material/Remove";
-import { shades } from "../theme";
-import { addToCart } from "../state";
-import { useNavigate } from "react-router-dom";
+import MainCarousel from './MainCarousel'
 
 const Home = () => {
-    return <div>Home</div>
+    return (
+    <div className='home'>
+        <MainCarousel />
+    </div>
+    );
 }
 
 export default Home;
