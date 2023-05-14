@@ -42,15 +42,14 @@ const Item = ({item, width}) => {
                     style={{ cursor: 'pointer' }}
                 />
                 <Box
-                    display={isHovered ? "blocked" : "none"}
-                    position="aboslute"
+                    display={isHovered ? "block" : "none"}
+                    position="absolute"
                     bottom="10%"
                     left="0"
                     width="100%"
                     padding="0 5%"
-
                 >
-                    <Box display="flex" justifyContent="space-betwe">
+                    <Box display="flex" justifyContent="space-between">
                         <Box display="flex" alignItems="center" backgroundColor={shades.neutral[100]} borderRadius="3px">
                             <IconButton onClick={() => setCount(Math.max(count-1,1))}>
                                 <RemoveIcon />
